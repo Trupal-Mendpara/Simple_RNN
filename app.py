@@ -4,7 +4,7 @@ from tensorflow.keras.models import load_model
 import streamlit as st
 
 word_index = imdb.get_word_index()
-model = load_model('Simple_RNN/simple_rnn_model.h5')
+model = load_model('simple_rnn_model.h5')
 
 def preprocess_text(text):
     words = text.lower().split()
